@@ -21,7 +21,6 @@ public class FeignClientController {
 
     @RequestMapping("hello2")
     public String hello2(@RequestParam String name){
-        int i = 100/0;
         return "欢迎" + name + "调用server1";
     }
 }
