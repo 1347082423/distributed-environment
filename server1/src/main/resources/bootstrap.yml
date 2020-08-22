@@ -1,0 +1,6 @@
+spring:
+  cloud:
+    config:
+      uri: http://localhost:9018 #config server服务器请求地址
+      profile: dev
+      name: application  #文件前缀名称

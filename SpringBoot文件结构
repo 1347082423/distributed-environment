@@ -1,0 +1,16 @@
+1. .gitignore：分布式版本控制系统git的配置文件，意思为忽略提交
+    在 .gitingore 文件中，遵循相应的语法，即在每一行指定一个忽略规则。 如：.log、/target/、.idea
+2. mvnw：全名是maven wrapper的文件
+    它的作用是在maven-wrapper.properties文件中记录你要使用的maven版本，当用户执行mvnw clean 命令时，发现当前用户的maven版本和期望的版本不一致，那么就下载期望的版本，然后用期望的版本来执行mvn命令，比如mvn clean命令。
+3. mvn文件夹：存放mvnw相关文件
+    存放着maven-wrapper.properties和相关jar包以及名为MavenWrapperDownloader的java文件
+4. mvn.cmd：执行mvnw命令的cmd入口
+    *注：mvnw文件适用于Linux（bash），mvnw.cmd适用于Windows 环境。
+5. .iml文件：intellij idea的工程配置文件
+    里面包含当前project的一些配置信息，如模块开发的相关信息，比如java组件，maven组件，插件组件等，还可能会存储一些模块路径信息，依赖信息以及一些别的信息。
+6. .idea文件夹：存放项目的配置信息
+    包括数据源，类库，项目字符编码，历史记录，版本控制信息等。
+7. pom.xml：项目对象模型（核心重要）
+    pom.xml主要描述了项目的maven坐标，依赖关系，开发者需要遵循的规则，缺陷管理系统，组织和licenses，以及其他所有的项目相关因素，是项目级别的配置文件。
+总之，如果你不用Git做版本控制，不控制maven版本，那么.gitingore和 mvnw，.mvn,mvnw.cmd这几个都可以统统删掉
+而.idea和.iml文件可以隐藏，方法是settings->Editor->File types中右下角忽略文件将.idea;*.iml;添加进去
