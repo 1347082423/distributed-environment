@@ -19,6 +19,7 @@
         <module>eureka-server</module>
         <module>server1</module>
         <module>server2</module>
+        <module>user-server</module>
     </modules>
 
     <properties>
@@ -67,6 +68,26 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+
+
+        <dependency>
+            <groupId>com.ex</groupId>
+            <artifactId>comm</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <!--用于用户身份验证-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+
+        <!--用于添加前端HTML渲染-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
+
 
     </dependencies>
 
