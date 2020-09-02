@@ -5,3 +5,14 @@ eureka:
     service-url:
       defaultZone: http://username:pass@localhost:9028/eureka/
 
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/ex?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    password: root
+    username: root
+
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
